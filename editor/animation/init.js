@@ -75,6 +75,8 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 $content.find('.call').html('Pass: checkio(' + JSON.stringify(checkioInput) + ')');
                 $content.find('.answer').remove();
             }
+
+            var $explanation = $content.find(".explanation");
             var scale = 20;
             var zeroX = 50;
             var zeroY = 220;
@@ -99,7 +101,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 additional[0] * scale + zeroX, zeroY - additional[1] * scale).attr({
                     "stroke": "#0070AB", "stroke-width": 1, "stroke-dasharray": "-"});
 
-            var convertedInput = '[["' + [checkio_input[0].join('","'), checkio_input[1].join('","')].join('"], ["') + '"]]';
+//            var convertedInput = '[["' + [checkio_input[0].join('","'), checkio_input[1].join('","')].join('"], ["') + '"]]';
 
 
             this_e.setAnimationHeight($content.height() + 60);
