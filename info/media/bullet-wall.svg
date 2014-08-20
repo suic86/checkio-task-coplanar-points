@@ -166,7 +166,7 @@
 <line fill="none" stroke="#294270" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="340" y1="180" x2="460" y2="260"/>
 <path fill="none" stroke="#65A1CF" stroke-miterlimit="10" d="M426,323"/>
 <path fill="none" stroke="#65A1CF" stroke-miterlimit="10" d="M126,223"/>
-<text transform="matrix(1 0 0 1 220 407.6667)"><tspan x="0" y="0" fill="#294270" font-family="'Roboto-Bold'" font-size="21">1 case - (8, 3) = 100 points</tspan><tspan x="0" y="25.2" fill="#294270" font-family="'Roboto-Bold'" font-size="21">2 case - (7, 2) = 0 points</tspan><tspan x="0" y="50.4" fill="#294270" font-family="'Roboto-Bold'" font-size="21">3 case - (8, 4) = 33 points</tspan><tspan x="0" y="75.6" fill="#294270" font-family="'Roboto-Bold'" font-size="21">4 case - (9, 5) = -1 points</tspan></text>
+<text transform="matrix(1 0 0 1 220 407.6667)"><tspan x="0" y="0" fill="#294270" font-family="'Roboto-Bold'" font-size="21">1 case - (8, 3) = 100 points</tspan><tspan x="0" y="25.2" fill="#294270" font-family="'Roboto-Bold'" font-size="21">2 case - (7, 2) = 0 points</tspan><tspan x="0" y="50.4" fill="#294270" font-family="'Roboto-Bold'" font-size="21">3 case - (8, 4) = 29 points</tspan><tspan x="0" y="75.6" fill="#294270" font-family="'Roboto-Bold'" font-size="21">4 case - (9, 5) = -1 points</tspan></text>
 <line fill="none" stroke="#65A1CF" stroke-width="2" stroke-miterlimit="10" x1="460" y1="260" x2="318.3" y2="47"/>
 <line fill="none" stroke="#294270" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="380" y1="139.5" x2="460" y2="260"/>
 <text transform="matrix(1 0 0 1 29.9998 445)" fill="#294270" font-family="'Roboto-Bold'" font-size="21">Second point</text>
