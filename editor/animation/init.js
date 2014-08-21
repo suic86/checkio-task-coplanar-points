@@ -83,8 +83,9 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
 
                 //if you need additional info from tests (if exists)
                 var explanation = data.ext["explanation"];
-                svg.line(checkioInput[3], explanation);
-
+                if (explanation) {
+                    svg.line(checkioInput[3], explanation);
+                }
                 $content.find('.output').html('&nbsp;Your result:&nbsp;' + JSON.stringify(userResult));
                 if (!result) {
                     $content.find('.answer').html('Right result:&nbsp;' + JSON.stringify(rightResult));
@@ -188,7 +189,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
 
             };
 
-            this.line = function(fr, to) {
+            this.line = function (fr, to) {
                 paper.path([
                     ["M", fr[0] * cell + p, sizeY - fr[1] * cell - p],
                     ["L", to[0] * cell + p, sizeY - to[1] * cell - p]
