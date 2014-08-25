@@ -1,13 +1,7 @@
-<div class="story">
-    Before they begin the expedition, Sofia, Stephen and Nikola must learn to
-    shoot at a target. This is for self defense of course as the journey will be
-    fraught with perils and dangerous creatures who mean to do harm. To
-    practice, the robotic trio have chosen an unassuming wall as their target
-    for their training.
-</div>
 <p>
-    On the shooting range shooters use a wall for practicing and trying to hit it from various positions.
-    Shooters doesn't have problems with with vertical deviation, so we can use a simplified model.
+    On a shooting range, shooters use a wall to practice, trying to hit it from various positions.
+    Shooters do not have problems with with vertical deviation,
+    so we can use a simplified model for this mission.
     We placed a camera above the shooting range and
     use <a href="http://en.wikipedia.org/wiki/Cartesian_coordinate_system">Cartesian coordinates</a> to describe states.
     We know coordinates of wall (target) ends and shooting point.
@@ -16,20 +10,21 @@
 </p>
 
 <p>
-    You are given wall ends coordinates and two point coordinates which describe a shot --
-    a start point and second point where is bullet after shot time (before a hit in the wall).
-    You should calculate the result of the shot.
-    If a bullet hit the wall in the center, then it's 100 points.
-    And points reduce proportionality to distance of the center.
-    The end point hit is 0 points. If a shooter missed, then -1 point.
-    The result should be <a href="http://en.wikipedia.org/wiki/Rounding#Rounding_to_integer">rounded to the nearest integer</a>.
+    You are given coordinates for the end-points of the target wall on a grid.
+    In addition, you have two points describing the shot: A starting point where the bullet was fired,
+    and a second point indicating the location of the bullet after a specified length of time.
+    You should calculate the result of the shot, specifically if a bullet hit the wall in the center,
+    then it's 100 points. Awarded points reduce in relation to the distance from the center.
+    An impact on the end of the wall is 0 points and a missed shot deducts a point (-1).
+    The result should be
+    <a href="http://en.wikipedia.org/wiki/Rounding#Rounding_to_integer">rounded to the nearest integer</a>.
 </p>
 
 <p style="text-align: center">
     <img title="bullet-wall" src="{{ MEDIA }}bullet-wall.svg" alt="bullet-wall" style="max-width: 520px"/>
 </p>
 
-<p><strong>Input: </strong> Four arguments. Two wall ends, a shot point and an later point as tuples of two numbers.
+<p><strong>Input: </strong> Four arguments. Two wall ends, a firing point and a later point as tuples of two numbers.
 
 </p>
 <p><strong>Output: </strong> The results as an integer from -1 to 100.</p>
@@ -47,6 +42,7 @@ shot((2, 2), (5, 7), (11, 2), (10.5, 3)) == -1
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    This concept can be using for modeling software and could help to determine the visibility of an object from a
-    particular vantage point.
+    This concept can be using for modeling software and could help to determine the visibility
+    of an object from a particular vantage point, or to calculate the trajectory of an object.
+    For example, the trajectory of the ball in Pong, or a missile in Missile Command.
 </p>
