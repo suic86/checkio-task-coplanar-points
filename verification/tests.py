@@ -41,6 +41,10 @@ TESTS = {
             "answer": -1,
             "explanation": [14, 1]
         },
+        {"input": ((0, 0), (1, 1), (3, 3), (2, 2)), "answer": 0, "explanation": [1, 1]},
+        {"input": ((0, 0), (1, 1), (2, 2), (3, 3)), "answer": -1, "explanation": None},
+        {"input": ((0, 0), (0, 1), (0, 3), (0, 2)), "answer": 0, "explanation": [0, 1]},
+        {"input": ((0, 0), (0, 1), (0, 2), (0, 3)), "answer": -1, "explanation": None},
         {
             "input": ((1, 1), (99, 99), (99, 1), (41, 39)),
             "answer": 79,

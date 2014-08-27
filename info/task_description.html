@@ -46,3 +46,9 @@ shot((2, 2), (5, 7), (11, 2), (10.5, 3)) == -1
     of an object from a particular vantage point, or to calculate the trajectory of an object.
     For example, the trajectory of the ball in Pong, or a missile in Missile Command.
 </p>
+
+<p>
+    <strong>Preconditions: </strong><br>
+    all(all(0 &le; i &lt; 100 for i in coor) for coor in args)<br>
+    wall1, wall2 and shot_point are not collinear.
+    </p>
