@@ -1,4 +1,4 @@
-checkio-task-bullet-and-wall
+checkio-task-coplanar-points
 ============================
 
-Checkio Task "Bullet and Wall"
+Checkio Task "Coplanar Points"
