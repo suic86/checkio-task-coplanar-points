@@ -70,9 +70,6 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
             $content.find('.call').html(checkioInputStr);
             $content.find('.output').html('Working...');
 
-            var svg = new ShootSvg($content.find(".explanation")[0]);
-            svg.draw(checkioInput);
-
 
             if (data.ext) {
                 var rightResult = data.ext["answer"];
